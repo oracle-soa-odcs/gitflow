@@ -9,7 +9,7 @@
 
 # Does this need to be smarter for each host OS?
 if [ -z "$INSTALL_PREFIX" ] ; then
-	INSTALL_PREFIX="/usr/local/bin"
+	INSTALL_PREFIX="/scratch/${USER}/soa/git/bin"
 fi
 
 if [ -z "$REPO_NAME" ] ; then
@@ -17,7 +17,7 @@ if [ -z "$REPO_NAME" ] ; then
 fi
 
 if [ -z "$REPO_HOME" ] ; then
-	REPO_HOME="http://github.com/nvie/gitflow.git"
+	REPO_HOME="https://github.com/nvie/gitflow.git"
 fi
 
 EXEC_FILES="git-flow"
